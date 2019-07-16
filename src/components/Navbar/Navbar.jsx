@@ -3,19 +3,21 @@ import webdev from '../../images/favicon.ico'
 import './navbar.css'
 
 const Navbar = () => (
-  <nav className="navbar bg-dark">
-    <div className='brand'>
-      <a href="/">
-        <img src={webdev} className="favicon" alt="webdev" />
-        <span className='text'>Brandon Tsai</span>
+  <nav className="navbar">
+    <div className='navbar-brand'>
+      <a href='/'>
+          <img src={webdev} className='navbar-favicon' alt="webdev" />
+          <span className='navbar-text'>Brandon Tsai</span>
       </a>
     </div>
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/resume">Resume</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
+    <div className='navbar-links'>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/resume">Resume</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 );
 
