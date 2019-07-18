@@ -73,6 +73,8 @@ const LinkItems = styled.div`
   }
 `;
 
+/* the 'href' in Navbar need to be updated if change hosting service,
+   it's for GitHub Pages right now. */
 const Navbar = () => (
   <Nav>
     <Brand>
@@ -83,10 +85,10 @@ const Navbar = () => (
     </Brand>
     <LinkItems>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/resume">Resume</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://ioulungtsai.github.io/personal-website/about">About</a></li>
+        <li><a href="https://ioulungtsai.github.io/personal-website/resume">Resume</a></li>
+        <li><a href="https://ioulungtsai.github.io/personal-website/projects">Projects</a></li>
+        <li><a href="https://ioulungtsai.github.io/personal-website/contact">Contact</a></li>
       </ul>
     </LinkItems>
   </Nav>
