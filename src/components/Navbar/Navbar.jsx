@@ -76,7 +76,7 @@ const LinkItems = styled.div`
 const Navbar = () => (
   <Nav>
     <Brand>
-      <a href='/'>
+      <a href='https://ioulungtsai.github.io/personal-website/'>
         <Favicon src={webdev} alt="webdev" />
         <Text>Brandon Tsai</Text>
       </a>
