@@ -14,7 +14,9 @@ const BodyWrapper = styled.div`
 `;
 
 const App = () => (
-  <Router>
+  <Router 
+    basename="%PUBLIC_URL%"
+  >
     <Navbar />
     <BodyWrapper>
       <Sidebar />
