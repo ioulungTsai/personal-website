@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import webdev from '../../images/favicon.ico'
 
 const Nav = styled.div`
@@ -85,10 +86,10 @@ const Navbar = () => (
     </Brand>
     <LinkItems>
       <ul>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">About</a></li>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">Resume</a></li>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">Projects</a></li>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">Contact</a></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/resume'>Resume</Link></li>
+        <li><Link to='/projects'>Projects</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
       </ul>
     </LinkItems>
   </Nav>

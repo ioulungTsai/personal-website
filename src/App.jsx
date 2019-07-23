@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { BrowserRouter as Router } from "react-router-dom";
+
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import ContentDisplay from './components/ContentDisplay/ContentDisplay';
-import styled from 'styled-components';
 
 import './App.css';
 
@@ -13,13 +14,13 @@ const BodyWrapper = styled.div`
 `;
 
 const App = () => (
-  <Fragment>
+  <Router>
     <Navbar />
     <BodyWrapper>
       <Sidebar />
       <ContentDisplay />
     </BodyWrapper>
-  </Fragment>
+  </Router>
 );
 
 export default App;
