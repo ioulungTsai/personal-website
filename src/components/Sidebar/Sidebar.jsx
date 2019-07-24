@@ -1,45 +1,73 @@
 import React from 'react'
 import styled from 'styled-components';
-import me from '../../images/me_resize.jpg';
+import brandontsai from '../../images/me_resize.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import data from '../../data/contact'
 
 const Side = styled.div`
-  color: #d6d6d6;
-  letter-spacing: 0.25em;
-  ${'' /* background: #bbbbbb; */}
-  margin-right: 3rem;
-  min-width: 22rem;
   width: 22rem;
   height: 50rem;
+  color: #d6d6d6;
+  min-width: 22rem;
+  margin-right: 3rem;
+  letter-spacing: 0.25em;
   & > * {
-    border-top: 1px solid #d6d6d6;
     margin: 3rem 0 0 0;
     padding: 3rem 0 0 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
   }
   ul{
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: space-evenly;
   }
 `;
 
 const Intro = styled.section`
-  border-top: none;
   margin: 0;
   padding: 0;
-`;
-
-const Photo = styled.img`
-  width: 10em;
-  border-radius: 50%;
-  display: block;
-`;
-
-const Header = styled.h2`
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+  border-top: none;
   text-transform: uppercase;
+
+  img {
+    width: 10em;
+    display: block;
+    border-radius: 50%;
+  }
+
+  h2 {
+    margin-top: 1.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    background: #333 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    background-size: 150px;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+    ${'' /* background-position: 300px; */}
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: -1000px;
+    }
+    20% {
+      background-position: -150px;
+    }
+    80% {
+      background-position: 350px;
+    }
+    100% {
+      background-position: 1000px;
+    }
+  }
 `;
 
 const About = styled.section`
@@ -48,34 +76,33 @@ const About = styled.section`
     text-transform: uppercase;
   }
   p {
-    letter-spacing: 0;
     font-size: 0.9rem;
     line-height: 1.75;
-    text-align: justify;
+    letter-spacing: 0;
     margin-top: 1.5rem;
+    text-align: justify;
   }
   a {
     color: inherit;
   }
-  ${'' /* border-top: 1px solid #eeeeee;
-  margin: 3rem 0 0 0;
-  padding: 3rem 0 0 0; */}
 `;
 
 const Footer = styled.section`
   a {
       color: inherit;
     }
-  ${'' /* border-top: 1px solid #eeeeee;
-  margin: 3rem 0 0 0;
-  padding: 3rem 0 0 0; */}
+
+  a:hover {
+    color: #91CAF9;
+  }
 `;
 
 const Sidebar = () => (
     <Side>
       <Intro>
-        <Photo src={me} alt='me'/>
-        <Header>Brandon Tsai</Header>
+        <img src={brandontsai} alt='brandontsai'/>
+        <h2>Brandon Tsai</h2>
+        <p>Full Stack Web Developer</p>
       </Intro>
       <About>
         <h2>About</h2>

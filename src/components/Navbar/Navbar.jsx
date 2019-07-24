@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 import webdev from '../../images/favicon.ico'
 
 const Nav = styled.div`
-  display: flex;
-  align-items: center;
+  top: 0;
   flex: 1;
   width: 100%;
   height: 60px;
+  display: flex;
+  z-index: 520999
+  position: fixed;
+  padding-left: 3rem;
+  font-size: 0.75rem;
+  align-items: center;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  font-size: 0.75rem;
-  padding-left: 3rem;
   background-color: #212121;
-  ${'' /* border-bottom: solid 1px rgba(160, 160, 160, 0.3); */}
-  position: fixed;
-  top: 0;
-  z-index: 520999
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
   * {
     color: #eeeeee;
   }
@@ -28,6 +28,11 @@ const Brand = styled.div`
     display: flex;
     align-items: center;
   }
+  &:hover {
+    span {
+      color: #91CAF9;
+    }
+  }
 `;
 
 const Favicon = styled.img`
@@ -37,32 +42,32 @@ const Favicon = styled.img`
 `;
 
 const Text = styled.span`
-  ${'' /* color: #eeeeee; */}
   font-weight: 800;
 `;
 
 const LinkItems = styled.div`
+  display: flex;
+  height: inherit;
   margin-left: 6rem;
   padding-left: 6rem;
-  ${'' /* border-left: solid 1px rgba(160, 160, 160, 0.3); */}
-  height: inherit;
-  display: flex;
   align-items: center;
 
   ul {
-    list-style: none;
     display: flex;
+    list-style: none;
 
     li {
-      ${'' /* border-left: solid 1px rgba(160, 160, 160, 0.3); */}
       margin-left: 1rem;
       padding-left: 1rem;
 
       a {
-        ${'' /* color: #eeeeee; */}
+        height: 100%;
         text-align: center;
         font-weight: normal;
-        height: 100%;
+      }
+
+      a:hover {
+        color: #91CAF9;
       }
     }
 
@@ -74,15 +79,13 @@ const LinkItems = styled.div`
   }
 `;
 
-/* the 'href' in Navbar need to be updated if change hosting service,
-   it's for GitHub Pages right now. will use react-router-dom */
 const Navbar = () => (
   <Nav>
     <Brand>
-      <a href='https://ioulungtsai.github.io/personal-website/'>
+      <Link to='/'>
         <Favicon src={webdev} alt="webdev" />
         <Text>Brandon Tsai</Text>
-      </a>
+      </Link>
     </Brand>
     <LinkItems>
       <ul>
