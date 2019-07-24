@@ -19,7 +19,7 @@ const Display = styled.div`
 const ContentDisplay = ({location}) => (
   <Display>
     <Switch location={location}>
-      <Route path={process.env.PUBLIC_URL + '/'} component={Home} />
+      <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/resume" component={Resume} />
       <Route path="/contact" component={Contact} />

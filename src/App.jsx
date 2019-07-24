@@ -14,7 +14,9 @@ const BodyWrapper = styled.div`
 `;
 
 const App = () => (
-  <Router>
+  <Router
+    basename={process.env.PUBLIC_URL}
+  >
     <Navbar />
     <BodyWrapper>
       <Sidebar />

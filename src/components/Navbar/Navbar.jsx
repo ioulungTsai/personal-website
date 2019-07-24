@@ -82,7 +82,7 @@ const LinkItems = styled.div`
 const Navbar = () => (
   <Nav>
     <Brand>
-      <Link to={process.env.PUBLIC_URL + '/'}>
+      <Link to='/'>
         <Favicon src={webdev} alt="webdev" />
         <Text>Brandon Tsai</Text>
       </Link>
