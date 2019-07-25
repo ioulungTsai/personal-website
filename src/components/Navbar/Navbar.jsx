@@ -5,28 +5,38 @@ import webdev from '../../images/favicon.ico'
 
 const Nav = styled.div`
   top: 0;
-  flex: 1;
+  left: 0;
   width: 100%;
   height: 60px;
-  display: flex;
+  display: block;
   z-index: 520999
   position: fixed;
-  padding-left: 3rem;
-  font-size: 0.75rem;
-  align-items: center;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  background-color: #212121;
+  letter-spacing: 0.125rem;
+  background-color: #303030;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  > div {
+    display:flex;
+    height: inherit;
+    max-width: 980px;
+    margin: auto;
+    padding-left: 1rem;
+    align-items: center;
+  }
   * {
     color: #eeeeee;
   }
 `;
 
 const Brand = styled.div`
+  width: 22rem;
+  margin-right: 3rem;
   a {
+    color: inherit;
     display: flex;
     align-items: center;
+  }
+  span {
+    transition-duration: 0.5s;
   }
   &:hover {
     span {
@@ -42,35 +52,30 @@ const Favicon = styled.img`
 `;
 
 const Text = styled.span`
-  font-weight: 800;
+  font-weight: 600;
 `;
 
 const LinkItems = styled.div`
   display: flex;
   height: inherit;
-  margin-left: 6rem;
-  padding-left: 6rem;
+  padding-left: 1rem;
   align-items: center;
-
   ul {
     display: flex;
     list-style: none;
-
     li {
       margin-left: 1rem;
       padding-left: 1rem;
-
       a {
         height: 100%;
         text-align: center;
         font-weight: normal;
+        transition-duration: 0.5s;
       }
-
       a:hover {
         color: #91CAF9;
       }
     }
-
     li:first-child {
       border-left: 0;
       margin-left: 0;
@@ -81,20 +86,22 @@ const LinkItems = styled.div`
 
 const Navbar = () => (
   <Nav>
-    <Brand>
-      <Link to='/'>
-        <Favicon src={webdev} alt="webdev" />
-        <Text>Brandon Tsai</Text>
-      </Link>
-    </Brand>
-    <LinkItems>
-      <ul>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/resume'>Resume</Link></li>
-        <li><Link to='/projects'>Projects</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
-      </ul>
-    </LinkItems>
+    <div>
+      <Brand>
+        <Link to='/'>
+          <Favicon src={webdev} alt="webdev" />
+          <Text>Brandon Tsai</Text>
+        </Link>
+      </Brand>
+      <LinkItems>
+        <ul>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/resume'>Resume</Link></li>
+          <li><Link to='/projects'>Projects</Link></li>
+          <li><Link to='/contact'>Contact</Link></li>
+        </ul>
+      </LinkItems>
+    </div>
   </Nav>
 )
 

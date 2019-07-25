@@ -13,7 +13,8 @@ const Display = styled.div`
   height: 60rem;
   padding: 1rem;
   min-width: 22rem;
-  background: #bbbbbb;
+  background: #303030;
+  box-shadow: 0 0 10px rgba(145,202,249,0.8);
 `;
 
 const ContentDisplay = ({location}) => (

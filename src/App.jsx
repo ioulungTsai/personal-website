@@ -10,7 +10,9 @@ import './App.css';
 
 const BodyWrapper = styled.div`
   display: flex;
-  padding: 6.5rem 3rem 3rem;
+  margin: 0 auto;
+  width: 980px;
+  padding: 6.5rem 1rem 3rem;
 `;
 
 const App = () => (
