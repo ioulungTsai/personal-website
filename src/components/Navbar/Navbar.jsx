@@ -1,31 +1,47 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import webdev from '../../images/favicon.ico'
 
 const Nav = styled.div`
-  display: flex;
-  align-items: center;
-  flex: 1;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 60px;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  padding-left: 3rem;
-  background-color: #212121;
-  ${'' /* border-bottom: solid 1px rgba(160, 160, 160, 0.3); */}
-  position: fixed;
-  top: 0;
+  display: block;
   z-index: 520999
+  position: fixed;
+  letter-spacing: 0.125rem;
+  background-color: #303030;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  > div {
+    display:flex;
+    height: inherit;
+    max-width: 980px;
+    margin: auto;
+    padding-left: 1rem;
+    align-items: center;
+  }
   * {
     color: #eeeeee;
   }
 `;
 
 const Brand = styled.div`
+  width: 22rem;
+  margin-right: 3rem;
   a {
+    color: inherit;
     display: flex;
     align-items: center;
+  }
+  span {
+    transition-duration: 0.5s;
+  }
+  &:hover {
+    span {
+      color: #91CAF9;
+    }
   }
 `;
 
@@ -36,35 +52,30 @@ const Favicon = styled.img`
 `;
 
 const Text = styled.span`
-  ${'' /* color: #eeeeee; */}
-  font-weight: 800;
+  font-weight: 600;
 `;
 
 const LinkItems = styled.div`
-  margin-left: 6rem;
-  padding-left: 6rem;
-  ${'' /* border-left: solid 1px rgba(160, 160, 160, 0.3); */}
-  height: inherit;
   display: flex;
+  height: inherit;
+  padding-left: 1rem;
   align-items: center;
-
   ul {
-    list-style: none;
     display: flex;
-
+    list-style: none;
     li {
-      ${'' /* border-left: solid 1px rgba(160, 160, 160, 0.3); */}
       margin-left: 1rem;
       padding-left: 1rem;
-
       a {
-        ${'' /* color: #eeeeee; */}
+        height: 100%;
         text-align: center;
         font-weight: normal;
-        height: 100%;
+        transition-duration: 0.5s;
+      }
+      a:hover {
+        color: #91CAF9;
       }
     }
-
     li:first-child {
       border-left: 0;
       margin-left: 0;
@@ -73,24 +84,24 @@ const LinkItems = styled.div`
   }
 `;
 
-/* the 'href' in Navbar need to be updated if change hosting service,
-   it's for GitHub Pages right now. will use react-router-dom */
 const Navbar = () => (
   <Nav>
-    <Brand>
-      <a href='https://ioulungtsai.github.io/personal-website/'>
-        <Favicon src={webdev} alt="webdev" />
-        <Text>Brandon Tsai</Text>
-      </a>
-    </Brand>
-    <LinkItems>
-      <ul>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">About</a></li>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">Resume</a></li>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">Projects</a></li>
-        <li><a href="https://ioulungtsai.github.io/personal-website/">Contact</a></li>
-      </ul>
-    </LinkItems>
+    <div>
+      <Brand>
+        <Link to='/'>
+          <Favicon src={webdev} alt="webdev" />
+          <Text>Brandon Tsai</Text>
+        </Link>
+      </Brand>
+      <LinkItems>
+        <ul>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/resume'>Resume</Link></li>
+          <li><Link to='/projects'>Projects</Link></li>
+          <li><Link to='/contact'>Contact</Link></li>
+        </ul>
+      </LinkItems>
+    </div>
   </Nav>
 )
 
