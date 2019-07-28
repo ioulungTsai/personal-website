@@ -17,7 +17,7 @@ const Nav = styled.div`
   > div {
     display:flex;
     height: inherit;
-    max-width: 980px;
+    max-width: 960px;
     margin: auto;
     padding-left: 1rem;
     align-items: center;

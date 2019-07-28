@@ -9,9 +9,9 @@ import ContentDisplay from './components/ContentDisplay/ContentDisplay';
 import './App.css';
 
 const BodyWrapper = styled.div`
+  width: 960px;
   display: flex;
   margin: 0 auto;
-  width: 980px;
   padding: 6.5rem 1rem 3rem;
 `;
 
