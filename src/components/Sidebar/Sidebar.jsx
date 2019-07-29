@@ -78,8 +78,8 @@ const About = styled.section`
 
 const Footer = styled.section`
   a {
-      color: inherit;
-      transition-duration: 0.5s;
+    color: inherit;
+    transition-duration: 0.5s;
     }
   a:hover {
     color: #91CAF9;

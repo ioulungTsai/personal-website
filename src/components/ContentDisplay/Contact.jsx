@@ -11,11 +11,11 @@ const ContactStyled = styled.div`
   }
   p {
     color: #b3b3b3;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   ul {
     color: #b3b3b3;
-    margin-top: 2rem;
+    margin-top: 1rem;
     list-style: none;
     line-height: 1.75;
     li::before {

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import webdev from '../../images/favicon.ico'
 
 const Nav = styled.div`
@@ -31,16 +31,23 @@ const Brand = styled.div`
   width: 22rem;
   margin-right: 3rem;
   a {
-    color: inherit;
     display: flex;
+    color: inherit;
     align-items: center;
   }
   span {
+    padding: 0.25rem 0;
     transition-duration: 0.5s;
+    border-bottom: 1px solid transparent;
   }
   &:hover {
     span {
       color: #91CAF9;
+    }
+  }
+  & > a.active {
+    span {
+      border-bottom: 1px solid #FF9999;
     }
   }
 `;
@@ -58,7 +65,7 @@ const Text = styled.span`
 const LinkItems = styled.div`
   display: flex;
   height: inherit;
-  padding-left: 1rem;
+  padding-left: 2rem;
   align-items: center;
   ul {
     display: flex;
@@ -67,13 +74,17 @@ const LinkItems = styled.div`
       margin-left: 1rem;
       padding-left: 1rem;
       a {
-        height: 100%;
+        padding: 0.25rem 0;
         text-align: center;
         font-weight: normal;
         transition-duration: 0.5s;
+        border-bottom: 1px solid transparent;
       }
       a:hover {
         color: #91CAF9;
+      }
+      a.active {
+        border-bottom: 1px solid #FF9999;
       }
     }
     li:first-child {
@@ -88,17 +99,17 @@ const Navbar = () => (
   <Nav>
     <div>
       <Brand>
-        <Link to='/'>
+        <NavLink exact to='/'>
           <Favicon src={webdev} alt="webdev" />
           <Text>Brandon Tsai</Text>
-        </Link>
+        </NavLink>
       </Brand>
       <LinkItems>
         <ul>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/resume'>Resume</Link></li>
-          <li><Link to='/projects'>Projects</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
+          <li><NavLink to='/about'>About</NavLink></li>
+          <li><NavLink to='/resume'>Resume</NavLink></li>
+          <li><NavLink to='/projects'>Projects</NavLink></li>
+          <li><NavLink to='/contact'>Contact</NavLink></li>
         </ul>
       </LinkItems>
     </div>
