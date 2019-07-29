@@ -5,3 +5,6 @@ Personal Website - https://ioulungtsai.github.io/personal-website/
          Please see the [spa-github-pages repo](https://github.com/rafrex/spa-github-pages) for instructions on how to use 
          this boilerplate to deploy your own single page app using GitHub Pages.
 - 7/25 - Add 404.html into the [public folder](https://facebook.github.io/create-react-app/docs/using-the-public-folder),              it will not be processed by Webpack.
+- 7/27 - Add content of Contact.
+- 7/28 - 1) Add active feature in Navbar for each route using NavLink.
+         2) Add content of Home and About.
