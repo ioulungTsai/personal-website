@@ -10,7 +10,7 @@ const ContactStyled = styled.div`
     border-bottom: 1px solid rgba(255,255,255,0.2);
   }
   p {
-    color: #b3b3b3;
+    color: #91CAF9;
     font-size: 1.125rem;
   }
   ul {

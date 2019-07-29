@@ -37,8 +37,8 @@ const Intro = styled.section`
     margin-top: 1.5rem;
   }
   p {
-    font-size: 1.25rem;
     font-weight: bold;
+    font-size: 1.25rem;
     margin-top: 1.5rem;
     background: #333 -webkit-gradient(
       linear, left top, right top,
@@ -63,6 +63,7 @@ const Intro = styled.section`
 
 const About = styled.section`
   p {
+    color: #bfbfbf;
     line-height: 1.75;
     letter-spacing: 0;
     margin-top: 1.5rem;
@@ -96,7 +97,7 @@ const Sidebar = () => (
       <About>
         <h3>Hi, I&apos;m Brandon</h3>
         <p>
-          I&apos;m a full stack web developer focusing in modern JavaScript.
+          A full stack web developer focusing in modern JavaScript.
           I like build things in an accessible and intuitive way.
           Give me a place to Code, and I will move the World&nbsp;
           <span role="img" aria-label="grinning face with smiling eyes">&#128513;</span>
