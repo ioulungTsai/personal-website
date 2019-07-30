@@ -16,13 +16,10 @@ const ContactStyled = styled.div`
   ul {
     color: #b3b3b3;
     margin-top: 1rem;
-    list-style: none;
-    line-height: 1.75;
-    li::before {
-      margin: 0 1rem;
-      font-size: 1.5rem;
-      content: '\\2022';
-      vertical-align: middle;
+    line-height: 1.6;
+    margin-left: 2rem;
+    li strong {
+      margin-left: 0.5rem;
     }
     a {
       color: #eeeeee;

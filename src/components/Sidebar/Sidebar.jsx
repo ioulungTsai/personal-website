@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Side = styled.div`
   width: 22rem;
   height: 50rem;
-  color: #d6d6d6;
+  color: #eeeeee;
   min-width: 22rem;
   margin-right: 3rem;
   letter-spacing: 0.125em;
@@ -63,8 +63,8 @@ const Intro = styled.section`
 
 const About = styled.section`
   p {
-    color: #bfbfbf;
-    line-height: 1.75;
+    color: #b3b3b3;
+    line-height: 1.6;
     letter-spacing: 0;
     margin-top: 1.5rem;
     text-align: justify;
