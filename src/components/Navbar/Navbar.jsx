@@ -11,7 +11,6 @@ const Nav = styled.div`
   display: block;
   z-index: 520999
   position: fixed;
-  letter-spacing: 0.125rem;
   background-color: #303030;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
   > div {
@@ -53,12 +52,13 @@ const Brand = styled.div`
 `;
 
 const Favicon = styled.img`
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   margin-right: 1rem;
 `;
 
 const Text = styled.span`
+  font-size: 1.125rem;
   font-weight: 600;
 `;
 

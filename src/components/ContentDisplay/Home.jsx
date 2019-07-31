@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const HomeStyled = styled.div`
- letter-spacing: 0.125rem;
   h2 {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -13,11 +12,12 @@ const HomeStyled = styled.div`
     font-size: 1.125rem;
   }
   ul {
-    color: #b3b3b3;
-    margin-top: 1rem;
-    line-height: 1.6;
-    font-weight: bold;
+    color: #eeeeee;
+    margin-top: 2rem;
     margin-left: 2rem;
+    li {
+      margin-bottom: 1rem;
+    }
     li span {
       margin-left: 0.5rem;
     }
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <HomeStyled>
       <h2>Welcome</h2>
-      <p>This simple and clean website is built with ...</p>
+      <p>This simple and clean website is built from scratch with ...</p>
       <ul>
         <li><span>JavaScript, CSS3, and HTML5</span></li>
         <li><span>React</span></li>

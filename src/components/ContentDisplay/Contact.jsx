@@ -3,7 +3,6 @@ import data from '../../data/contact'
 import styled from 'styled-components'
 
 const ContactStyled = styled.div`
-  letter-spacing: 0.125rem;
   h2 {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -15,15 +14,16 @@ const ContactStyled = styled.div`
   }
   ul {
     color: #b3b3b3;
-    margin-top: 1rem;
-    line-height: 1.6;
+    margin-top: 2rem;
     margin-left: 2rem;
     li strong {
       margin-left: 0.5rem;
     }
+    li {
+      margin-bottom: 1rem;
+    }
     a {
       color: #eeeeee;
-      font-weight: bold;
       transition-duration: 0.5s;
     }
     a:hover {

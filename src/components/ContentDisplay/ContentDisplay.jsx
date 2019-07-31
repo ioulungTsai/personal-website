@@ -11,7 +11,7 @@ import Projects from './Projects'
 const Display = styled.div`
   ${'' /* width: 60rem; */}
   ${'' /* height: auto; */}
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
   color: #eeeeee;
   min-width: 33rem;
   background: #303030;
