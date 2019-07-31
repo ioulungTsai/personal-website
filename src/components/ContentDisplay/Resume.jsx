@@ -9,13 +9,13 @@ const ResumeStyled = styled.div`
   }
   h4 {
     margin-left: 1rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   p {
     color: #91CAF9;
     margin-left: 1rem;
     margin-top: 0.5rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   ul {
     color: #b3b3b3;

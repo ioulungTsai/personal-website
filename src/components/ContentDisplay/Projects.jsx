@@ -23,13 +23,15 @@ const ProjectStyled = styled.div`
     }
   }
   h3 {
+    font-size: 1rem;
     margin-top: 4rem;
+    margin-left: 1rem;
   }
   h4{
     a {
       color: #eeeeee;
       margin-left: 1rem;
-      font-size: 1.125rem;
+      font-size: 1rem;
       transition-duration: 0.5s;
       border-bottom: 1px dashed #ff9999;
     }
@@ -40,7 +42,7 @@ const ProjectStyled = styled.div`
     span {
       color: #91CAF9;
       font-weight: 100;
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
   }
 `;

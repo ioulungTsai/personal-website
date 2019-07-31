@@ -38,7 +38,7 @@ const Intro = styled.section`
   }
   p {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
     background: #363636 -webkit-gradient(
       linear, left top, right top,
@@ -63,7 +63,7 @@ const Intro = styled.section`
 
 const About = styled.section`
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
   p {

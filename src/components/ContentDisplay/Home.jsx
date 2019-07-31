@@ -9,7 +9,8 @@ const HomeStyled = styled.div`
   }
   p {
     color: #91CAF9;
-    font-size: 1.125rem;
+    margin-left: 1rem;
+    ${'' /* font-size: 1.125rem; */}
   }
   ul {
     color: #eeeeee;
@@ -28,7 +29,7 @@ const Home = () => {
   return (
     <HomeStyled>
       <h2>Welcome</h2>
-      <p>This simple and clean website is built from scratch with ...</p>
+      <p>A simple and clean website built from scratch with ...</p>
       <ul>
         <li><span>JavaScript, CSS3, and HTML5</span></li>
         <li><span>React</span></li>
