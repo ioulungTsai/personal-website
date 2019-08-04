@@ -7,10 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Side = styled.div`
   width: 22rem;
   height: 50rem;
-  color: #d6d6d6;
+  color: #eeeeee;
   min-width: 22rem;
   margin-right: 3rem;
-  letter-spacing: 0.125em;
   & > * {
     margin: 3rem 0 0 0;
     padding: 3rem 0 0 0;
@@ -34,15 +33,16 @@ const Intro = styled.section`
     border: 3px double #d9d9d9;
   }
   h2 {
+    font-size: 1.5rem;
     margin-top: 1.5rem;
   }
   p {
-    font-size: 1.25rem;
     font-weight: bold;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
-    background: #333 -webkit-gradient(
+    background: #363636 -webkit-gradient(
       linear, left top, right top,
-      from(#222), to(#222),
+      from(#363636), to(#363636),
       color-stop(0.5, #fff)
     ) 0 0 no-repeat;
     background-size: 100px;
@@ -51,7 +51,7 @@ const Intro = styled.section`
     -webkit-animation-name: shine;
     -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
-    text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0px 0px rgba(255,255,255,0.5);
   }
   @keyframes shine {
     0%   { background-position: -1000px; }
@@ -62,10 +62,14 @@ const Intro = styled.section`
 `;
 
 const About = styled.section`
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
   p {
-    line-height: 1.75;
+    color: #b3b3b3;
+    line-height: 1.6;
     letter-spacing: 0;
-    margin-top: 1.5rem;
     text-align: justify;
     span {
       font-size: 1.25rem;
@@ -78,8 +82,8 @@ const About = styled.section`
 
 const Footer = styled.section`
   a {
-      color: inherit;
-      transition-duration: 0.5s;
+    color: inherit;
+    transition-duration: 0.5s;
     }
   a:hover {
     color: #91CAF9;
@@ -96,7 +100,7 @@ const Sidebar = () => (
       <About>
         <h3>Hi, I&apos;m Brandon</h3>
         <p>
-          I&apos;m a full stack web developer focusing in modern JavaScript.
+          A full stack web developer focusing in modern JavaScript.
           I like build things in an accessible and intuitive way.
           Give me a place to Code, and I will move the World&nbsp;
           <span role="img" aria-label="grinning face with smiling eyes">&#128513;</span>
