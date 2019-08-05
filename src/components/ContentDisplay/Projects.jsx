@@ -5,6 +5,11 @@ import robofriends from '../../images/robofriends.jpg';
 import personalwebsite from '../../images/personal-website.png';
 
 const ProjectStyled = styled.div`
+  left: 2rem;
+  right: 2rem;
+  height: 540px;
+  overflow: scroll;
+  position: absolute;
   h2 {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -37,7 +42,7 @@ const ProjectStyled = styled.div`
       margin-left: 1rem;
       margin-bottom: 1rem;
       transition-duration: 0.5s;
-      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     p {
       color: #eeeeee;
@@ -54,25 +59,19 @@ const ProjectStyled = styled.div`
       border-bottom: 1px dashed transparent;
     }
     img {
-      box-shadow: 0 0 10px rgba(255,99,99,0.5);
+      box-shadow: 0 0 10px rgba(145,202,249,0.5)
     }
-  }
-  span {
-    color: #91CAF9;
-    font-weight: 100;
-    font-size: 1rem;
   }
 `;
 
 const Projects = () => {
   return (
     <ProjectStyled>
-      <h2>Projects</h2>
-      <a href='https://ioulungtsai.github.io/personal-website/'>
+      <h2>Personal Website</h2>
+      <a href='https://ioulungtsai.github.io/personal-website/' target='_blank' rel="noopener noreferrer">
         <img src={personalwebsite} alt='personal-website'/>
-        <p>Personal Website</p>
+        {/* <p>Personal Website</p> */}
       </a>
-      <span> - Last updated 7/30/2019</span>
       <ul>
         <li>
           A pure front-end web app to sell myself&nbsp;
@@ -80,22 +79,24 @@ const Projects = () => {
         </li>
         <li>Hosted by GitHub Pages</li>
       </ul>
-      <a href='https://github.com/ioulungTsai/bee-brain'>
+
+      <h2>BeeBrain</h2>
+      <a href='https://github.com/ioulungTsai/bee-brain' target='_blank' rel="noopener noreferrer">
         <img src={beebrain} alt='bee-brain'/>
-        <p>BeeBrain</p>
+        {/* <p>BeeBrain</p> */}
       </a>
-      <span> - Last updated 7/9/2019</span>
       <ul>
         <li>A full stack web app which detects faces in images and update detection counter to a database</li>
         <li>Layout and style created by React and Tachyons</li>
         <li>Built backend RESTful API with Node.js, Express and PostgreSQL</li>
         <li>Serving data with Clarifai API</li>
       </ul>
-      <a href='https://github.com/ioulungTsai/robofriends'>
+
+      <h2>Robofriends</h2>
+      <a href='https://github.com/ioulungTsai/robofriends' target='_blank' rel="noopener noreferrer">
         <img src={robofriends} alt='robofriends'/>
-        <p>Robofriends</p>
+        {/* <p>Robofriends</p> */}
       </a>
-      <span> - Last updated 5/16/2019</span>
       <ul>
         <li>
           An app find out your robo-friend in the fly&nbsp;

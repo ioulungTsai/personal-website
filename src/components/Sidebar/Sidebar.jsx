@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Side = styled.div`
   width: 22rem;
-  height: 50rem;
+  ${'' /* height: 50rem; */}
   color: #eeeeee;
   min-width: 22rem;
   margin-right: 3rem;
@@ -110,7 +110,7 @@ const Sidebar = () => (
         <ul className="icons">
           {data.map(s => (
             <li key={s.label}>
-              <a href={s.link}><FontAwesomeIcon icon={s.icon} size='lg'/></a>
+              <a href={s.link} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={s.icon} size='lg'/></a>
             </li>
           ))}
         </ul>

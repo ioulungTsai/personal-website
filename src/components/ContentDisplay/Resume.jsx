@@ -2,6 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ResumeStyled = styled.div`
+  left: 2rem;
+  right: 2rem;
+  height: 540px;
+  overflow: scroll;
+  position: absolute;
   h2 {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -12,14 +17,12 @@ const ResumeStyled = styled.div`
     font-size: 1rem;
   }
   p {
-    color: #91CAF9;
     margin-left: 1rem;
     margin-top: 0.5rem;
     font-size: 1rem;
   }
   ul {
     color: #b3b3b3;
-    ${'' /* line-height: 1.6; */}
     margin-top: 1rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
@@ -74,17 +77,17 @@ const Resume = () => {
         <h4>Udemy Courses</h4>
         <ul>
           <li>
-            <a href='https://www.udemy.com/understand-javascript/'>
+            <a href='https://www.udemy.com/understand-javascript/' target='_blank' rel="noopener noreferrer">
               JavaScript: Understanding the Weird Parts
             </a>
           </li>
           <li>
-            <a href='https://www.udemy.com/the-complete-web-developer-zero-to-mastery/'>
+            <a href='https://www.udemy.com/the-complete-web-developer-zero-to-mastery/' target='_blank' rel="noopener noreferrer">
               The Complete Web Developer in 2019: Zero to Mastery
             </a>
           </li>
           <li>
-            <a href='https://www.udemy.com/advanced-javascript-concepts/'>
+            <a href='https://www.udemy.com/advanced-javascript-concepts/' target='_blank' rel="noopener noreferrer">
               Advanced JavaScript Concepts
             </a>
           </li>
