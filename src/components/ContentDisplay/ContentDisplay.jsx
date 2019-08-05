@@ -30,14 +30,14 @@ const Display = styled.div`
   }
   .fade-enter-active {
     opacity: 1;
-    transition: opacity 450ms linear 150ms;
+    transition: opacity 300ms ease-in 150ms;
   }
   .fade-exit {
     opacity: 1;
   }
   .fade-exit-active {
     opacity: 0;
-    transition: opacity 50ms linear 150ms;
+    transition: opacity 0ms linear;
   }
 `;
 
@@ -47,7 +47,7 @@ const ContentDisplay = ({location}) => (
       <TransitionGroup>
         <CSSTransition
           key={location.key}
-          timeout={600}
+          timeout={450}
           classNames="fade"
         >
           <Switch location={location}>
