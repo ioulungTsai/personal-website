@@ -10,6 +10,7 @@ const ProjectStyled = styled.div`
   height: 540px;
   overflow: scroll;
   position: absolute;
+  padding-bottom: 2rem;
   h2 {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -37,10 +38,11 @@ const ProjectStyled = styled.div`
   }
   a{
     img {
-      width: 90%;
+      width: 80%;
       display: block;
-      margin-left: 1rem;
-      margin-bottom: 1rem;
+      margin: 0rem auto 1rem;
+      ${'' /* margin-left: 1rem;
+      margin-bottom: 1rem; */}
       transition-duration: 0.5s;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }

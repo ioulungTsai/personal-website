@@ -7,6 +7,7 @@ const ResumeStyled = styled.div`
   height: 540px;
   overflow: scroll;
   position: absolute;
+  padding-bottom: 2rem;
   h2 {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
