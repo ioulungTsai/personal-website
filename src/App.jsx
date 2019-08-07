@@ -12,7 +12,6 @@ const BodyWrapper = styled.div`
   width: 960px;
   display: flex;
   margin: 0 auto;
-  ${'' /* align-items: flex-start; */}
   padding: 6.5rem 1rem 3rem;
 `;
 

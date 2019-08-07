@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const AboutStyled = styled.div`
+  left: 2rem;
+  right: 2rem;
+  overflow: auto;
+  position: absolute;
   h2 {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
