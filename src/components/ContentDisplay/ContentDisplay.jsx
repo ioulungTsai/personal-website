@@ -17,14 +17,14 @@ import Contact from './Contact'
 import Projects from './Projects'
 
 const Display = styled.div`
-  ${'' /* width: 60rem; */}
-  ${'' /* height: auto; */}
+  height: 420px;
   color: #eeeeee;
-  min-width: 33rem;
+  overflow: auto;
   position: relative;
   background: #303030;
+  margin-bottom: 2rem;
   padding: 2rem 2rem 4rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
   .fade-enter {
   opacity: 0;
   }
@@ -38,6 +38,10 @@ const Display = styled.div`
   .fade-exit-active {
     opacity: 0;
     transition: opacity 0ms linear;
+  }
+  @media screen and (min-width: 700px) {
+    flex: 60%;
+    height: 640px;
   }
 `;
 

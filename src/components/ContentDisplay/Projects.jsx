@@ -12,6 +12,7 @@ const ProjectStyled = styled.div`
   position: absolute;
   padding-bottom: 2rem;
   h2 {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -76,7 +77,7 @@ const Projects = () => {
       </a>
       <ul>
         <li>
-          A pure front-end web app to sell myself&nbsp;
+          A pure front-end web application to sell myself&nbsp;
           <span role="img" aria-label="NERD FACE">&#128526;</span>
         </li>
         <li>Hosted by GitHub Pages</li>
@@ -101,7 +102,7 @@ const Projects = () => {
       </a>
       <ul>
         <li>
-          An app find out your robo-friend in the fly&nbsp;
+          An application find out your Robofriend in the fly&nbsp;
           <span role="img" aria-label="Rocket">&#128640;</span>
         </li>
       </ul>

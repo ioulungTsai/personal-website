@@ -12,13 +12,16 @@ const Nav = styled.div`
   z-index: 520999
   position: fixed;
   background-color: #303030;
-  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  box-shadow:
+    0px 2px 4px -1px rgba(0,0,0,0.2),
+    0px 4px 5px 0px rgba(0,0,0,0.14),
+    0px 1px 10px 0px rgba(0,0,0,0.12);
   > div {
-    display:flex;
+    display: flex;
     height: inherit;
     max-width: 960px;
     margin: auto;
-    padding-left: 1rem;
+    padding: 0 1rem;
     align-items: center;
   }
   * {
@@ -28,7 +31,6 @@ const Nav = styled.div`
 
 const Brand = styled.div`
   width: 22rem;
-  margin-right: 3rem;
   a {
     display: flex;
     color: inherit;
@@ -49,28 +51,35 @@ const Brand = styled.div`
       border-bottom: 1px solid #FF9999;
     }
   }
+  @media screen and (min-width: 700px) {
+    margin-right: 3rem;
+  }
 `;
 
 const Favicon = styled.img`
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-right: 1rem;
+  width: 23px;
+  height: 23px;
+  margin-right: 0.5rem;
+  ${'' /* margin-bottom: 3.5px; */}
 `;
 
 const Text = styled.span`
+  display: none;
   font-weight: 600;
+  @media screen and (min-width: 700px) {
+    display: block;
+  }
 `;
 
 const LinkItems = styled.div`
   display: flex;
   height: inherit;
-  padding-left: 2rem;
   align-items: center;
   ul {
     display: flex;
     list-style: none;
     li {
-      margin-left: 1rem;
+      ${'' /* margin-left: 1rem; */}
       padding-left: 1rem;
       a {
         padding: 0.25rem 0;
@@ -91,6 +100,12 @@ const LinkItems = styled.div`
       margin-left: 0;
       padding-left: 0;
     }
+    @media screen and (min-width: 350px) {
+      padding-left: 2rem;
+      li {
+        margin-left: 1rem;
+      }
+    }
   }
 `;
 
@@ -99,7 +114,7 @@ const Navbar = () => (
     <div>
       <Brand>
         <NavLink exact to='/'>
-          <Favicon src={webdev} alt="webdev" />
+            <Favicon src={webdev} alt="webdev" />
           <Text>Brandon Tsai</Text>
         </NavLink>
       </Brand>

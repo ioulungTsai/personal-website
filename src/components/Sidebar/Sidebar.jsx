@@ -5,11 +5,8 @@ import brandontsai from '../../images/me_resize.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Side = styled.div`
-  width: 22rem;
-  ${'' /* height: 50rem; */}
+  height: 640px;
   color: #eeeeee;
-  min-width: 22rem;
-  margin-right: 3rem;
   & > * {
     margin: 3rem 0 0 0;
     padding: 3rem 0 0 0;
@@ -19,6 +16,10 @@ const Side = styled.div`
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+  }
+  @media screen and (min-width: 700px) {
+    flex: 40%;
+    margin-right: 3rem;
   }
 `;
 
@@ -62,7 +63,7 @@ const Intro = styled.section`
 `;
 
 const About = styled.section`
-  h3 {
+  h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -70,7 +71,7 @@ const About = styled.section`
     color: #b3b3b3;
     line-height: 1.6;
     letter-spacing: 0;
-    text-align: justify;
+    ${'' /* text-align: justify; */}
     span {
       font-size: 1.25rem;
       line-height: inherit;
@@ -98,7 +99,7 @@ const Sidebar = () => (
         <p>Full Stack Web Developer</p>
       </Intro>
       <About>
-        <h3>Hi, I&apos;m Brandon</h3>
+        <h2>Hi, I&apos;m Brandon</h2>
         <p>
           A full stack web developer focusing in modern JavaScript.
           I like build things in an accessible and intuitive way.

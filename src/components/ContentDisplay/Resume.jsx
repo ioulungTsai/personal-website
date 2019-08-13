@@ -9,6 +9,7 @@ const ResumeStyled = styled.div`
   position: absolute;
   padding-bottom: 2rem;
   h2 {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -16,6 +17,14 @@ const ResumeStyled = styled.div`
   h4 {
     margin-left: 1rem;
     font-size: 1rem;
+    br {
+      line-height: 1.6;
+    }
+    @media screen and (min-width: 450px) {
+      br {
+        display: none;
+      }
+    }
   }
   p {
     margin-left: 1rem;
@@ -54,20 +63,20 @@ const Resume = () => {
   return (
     <ResumeStyled>
       <h2>Experience</h2>
-      <h4>Full Stack Web Developer ( Self-Taught )</h4>
+      <h4>Full Stack Web Developer <br /> ( Self-Taught )</h4>
       <p>Aug 2018 – Present</p>
       <ul>
         <li><span>Built a full stack web app from scratch</span></li>
         <li><span>Managed software packages with NPM and the project through Github</span></li>
         <li><span>Deploying app on Heroku</span></li>
       </ul>
-      <h4>QC/QA Team Leader&nbsp;&nbsp;@&nbsp;&nbsp;AmTran&nbsp;&nbsp;[ Chino, CA ]</h4>
+      <h4>QC/QA Team Leader&nbsp;<br />@&nbsp;AmTran&nbsp;[ Chino, CA ]</h4>
       <p>Mar 2018 – May 2019</p>
       <ul>
         <li><span>Attained TV and Sound Bar refurbish permission by passing quality audit from VIZIO</span></li>
         <li><span>Reduced 50% of Work-in-Progress (WIP) storage</span></li>
       </ul>
-      <h4>Electrical Engineer&nbsp;&nbsp;@&nbsp;&nbsp;AmTran&nbsp;&nbsp;[ Taipei, Taiwan ]</h4>
+      <h4>Electrical Engineer&nbsp;<br />@&nbsp;AmTran&nbsp;[ Taipei, Taiwan ]</h4>
       <p>Oct 2009 – Oct 2013</p>
       <ul>
         <li><span>Developed, created and maintained mainboard system schematic and PCB layout for TVs</span></li>

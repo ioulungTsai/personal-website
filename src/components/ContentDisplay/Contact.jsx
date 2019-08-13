@@ -9,6 +9,7 @@ const ContactStyled = styled.div`
   overflow: auto;
   position: absolute;
   h2 {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255,255,255,0.2);
