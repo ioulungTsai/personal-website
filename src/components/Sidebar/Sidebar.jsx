@@ -48,18 +48,18 @@ const Intro = styled.section`
     ) 0 0 no-repeat;
     background-size: 100px;
     color: transparent;
-    -webkit-background-clip: text;
-    -webkit-animation-name: shine;
+    ${'' /* -webkit-background-clip: text; */}
+    ${'' /* -webkit-animation-name: shine; */}
     -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
     text-shadow: 0 0px 0px rgba(255,255,255,0.5);
   }
-  @keyframes shine {
+  ${'' /* @keyframes shine {
     0%   { background-position: -1000px; }
     20%  { background-position: -100px;  }
     80%  { background-position:  350px;  }
     100% { background-position: 1000px;  }
-  }
+  } */}
 `;
 
 const About = styled.section`
