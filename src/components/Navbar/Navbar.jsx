@@ -57,10 +57,9 @@ const Brand = styled.div`
 `;
 
 const Favicon = styled.img`
-  width: 23px;
-  height: 23px;
+  width: 1.25rem;
+  height: 1.25rem;
   margin-right: 0.5rem;
-  ${'' /* margin-bottom: 3.5px; */}
 `;
 
 const Text = styled.span`
@@ -79,20 +78,21 @@ const LinkItems = styled.div`
     display: flex;
     list-style: none;
     li {
-      ${'' /* margin-left: 1rem; */}
       padding-left: 1rem;
       a {
         padding: 0.25rem 0;
         text-align: center;
         font-weight: normal;
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         border-bottom: 1px solid transparent;
-      }
-      a:hover {
-        color: #91CAF9;
       }
       a.active {
         border-bottom: 1px solid #FF9999;
+      }
+      @media (hover: hover) {
+        a:hover {
+          color: #91CAF9;
+        }
       }
     }
     li:first-child {

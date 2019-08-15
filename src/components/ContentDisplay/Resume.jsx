@@ -1,12 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const ResumeStyled = styled.div`
-  left: 2rem;
-  right: 2rem;
-  height: 540px;
-  overflow: scroll;
-  position: absolute;
   padding-bottom: 2rem;
   h2 {
     font-size: 1.5rem;
@@ -61,57 +56,57 @@ const Section = styled.section`
 
 const Resume = () => {
   return (
-    <ResumeStyled>
-      <h2>Experience</h2>
-      <h4>Full Stack Web Developer <br /> ( Self-Taught )</h4>
-      <p>Aug 2018 – Present</p>
-      <ul>
-        <li><span>Built a full stack web app from scratch</span></li>
-        <li><span>Managed software packages with NPM and the project through Github</span></li>
-        <li><span>Deploying app on Heroku</span></li>
-      </ul>
-      <h4>QC/QA Team Leader&nbsp;<br />@&nbsp;AmTran&nbsp;[ Chino, CA ]</h4>
-      <p>Mar 2018 – May 2019</p>
-      <ul>
-        <li><span>Attained TV and Sound Bar refurbish permission by passing quality audit from VIZIO</span></li>
-        <li><span>Reduced 50% of Work-in-Progress (WIP) storage</span></li>
-      </ul>
-      <h4>Electrical Engineer&nbsp;<br />@&nbsp;AmTran&nbsp;[ Taipei, Taiwan ]</h4>
-      <p>Oct 2009 – Oct 2013</p>
-      <ul>
-        <li><span>Developed, created and maintained mainboard system schematic and PCB layout for TVs</span></li>
-        <li><span>Resolved products problems and issues from design to production</span></li>
-      </ul>
-      <Section>
-        <h2>Education</h2>
-        <h4>Udemy Courses</h4>
+      <ResumeStyled>
+        <h2>Experience</h2>
+        <h4>Full Stack Web Developer <br /> ( Self-Taught )</h4>
+        <p>Aug 2018 – Present</p>
         <ul>
-          <li>
-            <a href='https://www.udemy.com/understand-javascript/' target='_blank' rel="noopener noreferrer">
-              JavaScript: Understanding the Weird Parts
-            </a>
-          </li>
-          <li>
-            <a href='https://www.udemy.com/the-complete-web-developer-zero-to-mastery/' target='_blank' rel="noopener noreferrer">
-              The Complete Web Developer in 2019: Zero to Mastery
-            </a>
-          </li>
-          <li>
-            <a href='https://www.udemy.com/advanced-javascript-concepts/' target='_blank' rel="noopener noreferrer">
-              Advanced JavaScript Concepts
-            </a>
-          </li>
+          <li><span>Built a full stack web app from scratch</span></li>
+          <li><span>Managed software packages with NPM and the project through Github</span></li>
+          <li><span>Deploying app on Heroku</span></li>
         </ul>
-        <h4>MS Degree in EE @ National Taipei University</h4>
-        <p>Sep 2014 – Sep 2017</p>
+        <h4>QC/QA Team Leader&nbsp;<br />@&nbsp;AmTran&nbsp;[ Chino, CA ]</h4>
+        <p>Mar 2018 – May 2019</p>
         <ul>
-          <li><span>Design and tape-out a PWM Class D Audio Amplifier IC</span></li>
-          <li><span>GPA: 4.0 / 4.0</span></li>
+          <li><span>Attained TV and Sound Bar refurbish permission by passing quality audit from VIZIO</span></li>
+          <li><span>Reduced 50% of Work-in-Progress (WIP) storage</span></li>
         </ul>
-        <h4>BS Degree in EE @ Tamkang University</h4>
-        <p>June 2004 – June 2008</p>
-      </Section>
-    </ResumeStyled>
+        <h4>Electrical Engineer&nbsp;<br />@&nbsp;AmTran&nbsp;[ Taipei, Taiwan ]</h4>
+        <p>Oct 2009 – Oct 2013</p>
+        <ul>
+          <li><span>Developed, created and maintained mainboard system schematic and PCB layout for TVs</span></li>
+          <li><span>Resolved products problems and issues from design to production</span></li>
+        </ul>
+        <Section>
+          <h2>Education</h2>
+          <h4>Udemy Courses</h4>
+          <ul>
+            <li>
+              <a href='https://www.udemy.com/understand-javascript/' target='_blank' rel="noopener noreferrer">
+                JavaScript: Understanding the Weird Parts
+              </a>
+            </li>
+            <li>
+              <a href='https://www.udemy.com/the-complete-web-developer-zero-to-mastery/' target='_blank' rel="noopener noreferrer">
+                The Complete Web Developer in 2019: Zero to Mastery
+              </a>
+            </li>
+            <li>
+              <a href='https://www.udemy.com/advanced-javascript-concepts/' target='_blank' rel="noopener noreferrer">
+                Advanced JavaScript Concepts
+              </a>
+            </li>
+          </ul>
+          <h4>MS Degree in EE @ National Taipei University</h4>
+          <p>Sep 2014 – Sep 2017</p>
+          <ul>
+            <li><span>Design and tape-out a PWM Class D Audio Amplifier IC</span></li>
+            <li><span>GPA: 4.0 / 4.0</span></li>
+          </ul>
+          <h4>BS Degree in EE @ Tamkang University</h4>
+          <p>June 2004 – June 2008</p>
+        </Section>
+      </ResumeStyled>
   )
 }
 

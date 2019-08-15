@@ -4,10 +4,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ContactStyled = styled.div`
-  left: 2rem;
-  right: 2rem;
-  overflow: auto;
-  position: absolute;
+  padding-bottom: 2rem;
   h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;

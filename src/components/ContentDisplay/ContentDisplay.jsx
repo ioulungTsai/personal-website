@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import {
   Switch,
@@ -17,16 +17,14 @@ import Contact from './Contact'
 import Projects from './Projects'
 
 const Display = styled.div`
-  height: 420px;
   color: #eeeeee;
   overflow: auto;
-  position: relative;
   background: #303030;
   margin-bottom: 2rem;
   padding: 2rem 2rem 4rem;
   box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
   .fade-enter {
-  opacity: 0;
+    opacity: 0;
   }
   .fade-enter-active {
     opacity: 1;
@@ -37,34 +35,54 @@ const Display = styled.div`
   }
   .fade-exit-active {
     opacity: 0;
+    position: absolute;
     transition: opacity 0ms linear;
   }
   @media screen and (min-width: 700px) {
     flex: 60%;
     height: 640px;
+    margin-bottom: 0rem;
   }
 `;
 
-const ContentDisplay = ({location}) => (
-  <Display>
-    <Route render={({location})=>(
-      <TransitionGroup>
-        <CSSTransition
-          key={location.key}
-          timeout={450}
-          classNames="fade"
-        >
-          <Switch location={location}>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/projects" component={Projects} />
-          </Switch>
-        </CSSTransition>
-      </TransitionGroup>
-    )} />
-  </Display>
-)
+const ScrollToTop = ({ children, location: { pathname } }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return children || null;
+};
+
+const Scroll = withRouter(ScrollToTop);
+
+const ContentDisplay = ({ location }) => {
+  const contentDisplayRef = useRef();
+  useEffect(() => {
+    contentDisplayRef.current.scrollTop = 0;
+  })
+  return (
+    <Display ref={contentDisplayRef}>
+      <Route render={({location})=>(
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            timeout={450}
+            classNames="fade"
+          >
+            <Scroll>
+              <Switch location={location}>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/resume" component={Resume} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/projects" component={Projects} />
+              </Switch>
+            </Scroll>
+          </CSSTransition>
+        </TransitionGroup>
+      )} />
+    </Display>
+  )
+}
 
 export default withRouter(ContentDisplay);

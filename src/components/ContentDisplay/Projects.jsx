@@ -5,11 +5,6 @@ import robofriends from '../../images/robofriends.jpg';
 import personalwebsite from '../../images/personal-website.png';
 
 const ProjectStyled = styled.div`
-  left: 2rem;
-  right: 2rem;
-  height: 540px;
-  overflow: scroll;
-  position: absolute;
   padding-bottom: 2rem;
   h2 {
     font-size: 1.5rem;
@@ -73,7 +68,6 @@ const Projects = () => {
       <h2>Personal Website</h2>
       <a href='https://ioulungtsai.github.io/personal-website/' target='_blank' rel="noopener noreferrer">
         <img src={personalwebsite} alt='personal-website'/>
-        {/* <p>Personal Website</p> */}
       </a>
       <ul>
         <li>
@@ -86,7 +80,6 @@ const Projects = () => {
       <h2>BeeBrain</h2>
       <a href='https://github.com/ioulungTsai/bee-brain' target='_blank' rel="noopener noreferrer">
         <img src={beebrain} alt='bee-brain'/>
-        {/* <p>BeeBrain</p> */}
       </a>
       <ul>
         <li>A full stack web app which detects faces in images and update detection counter to a database</li>
@@ -98,7 +91,6 @@ const Projects = () => {
       <h2>Robofriends</h2>
       <a href='https://github.com/ioulungTsai/robofriends' target='_blank' rel="noopener noreferrer">
         <img src={robofriends} alt='robofriends'/>
-        {/* <p>Robofriends</p> */}
       </a>
       <ul>
         <li>
