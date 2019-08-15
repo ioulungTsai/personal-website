@@ -41,13 +41,11 @@ const Intro = styled.section`
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    background: #363636 -webkit-gradient(
-      linear, left top, right top,
-      from(#363636), to(#363636),
-      color-stop(0.5, #fff)
-    ) 0 0 no-repeat;
-    background-size: 100px;
     color: transparent;
+    background: linear-gradient(to right, #363636, #fff 50%, #363636) no-repeat;
+    background: -webkit-linear-gradient(to right, #363636, #fff 50%, #363636) no-repeat;
+    background-size: 100px;
+    -webkit-background-size: 100px;
     ${'' /* -webkit-background-clip: text; */}
     ${'' /* -webkit-animation-name: shine; */}
     -webkit-animation-duration: 5s;
