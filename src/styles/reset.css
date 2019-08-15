@@ -17,6 +17,7 @@ a {
 
 body {
   font-family: "Open sans", "Roboto", "Helvetica", "Arial", sans-serif;
+  -webkit-text-size-adjust: none;
 }
 
 @media screen and (min-width: 800px) {

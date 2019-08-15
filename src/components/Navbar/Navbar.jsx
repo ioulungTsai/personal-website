@@ -21,8 +21,11 @@ const Nav = styled.div`
     height: inherit;
     max-width: 960px;
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
     align-items: center;
+    @media screen and (min-width: 700px) {
+      padding: 0 1rem;
+    }
   }
   * {
     color: #eeeeee;
@@ -65,7 +68,7 @@ const Favicon = styled.img`
 const Text = styled.span`
   display: none;
   font-weight: 600;
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 400px) {
     display: block;
   }
 `;

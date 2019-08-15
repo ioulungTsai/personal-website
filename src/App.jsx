@@ -11,10 +11,11 @@ import './App.css';
 const BodyWrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 5rem 1rem 3rem;
+  padding: 4.25rem 0rem 3rem;
   @media screen and (min-width: 700px) {
     display: flex;
     padding-top: 6.5rem;
+    padding: 6rem 1rem 3rem;
     flex-direction: row-reverse;
   }
 `;
