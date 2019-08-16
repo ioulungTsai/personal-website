@@ -89,7 +89,7 @@ const Projects = () => {
       </ul>
 
       <h2>Robofriends</h2>
-      <a href='https://github.com/ioulungTsai/robofriends' target='_blank' rel="noopener noreferrer">
+      <a href='https://ioulungtsai.github.io/robofriends/' target='_blank' rel="noopener noreferrer">
         <img src={robofriends} alt='robofriends'/>
       </a>
       <ul>
