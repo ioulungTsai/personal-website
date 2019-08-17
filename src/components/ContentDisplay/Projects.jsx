@@ -39,25 +39,17 @@ const ProjectStyled = styled.div`
       margin: 0rem auto 1rem;
       ${'' /* margin-left: 1rem;
       margin-bottom: 1rem; */}
-      transition-duration: 0.5s;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-    p {
-      color: #eeeeee;
-      font-size: 1rem;
-      margin-left: 1rem;
-      display: inline-block;
-      transition-duration: 0.5s;
-      border-bottom: 1px dashed #ff9999;
+      ${'' /* transition-duration: 0.5s; */}
+      transition: all .3s ease-in-out;
+      ${'' /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */}
+      box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
     }
   }
-  a:hover {
-    p{
-      color: #ff9999;
-      border-bottom: 1px dashed transparent;
-    }
-    img {
-      box-shadow: 0 0 10px rgba(145,202,249,0.5)
+  @media (hover: hover) {
+    a:hover {
+      img {
+        transform: scale(1.05);
+      }
     }
   }
 `;

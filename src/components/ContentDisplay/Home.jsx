@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <HomeStyled>
       <h2>Welcome</h2>
-      <p>A simple and clean website built from scratch with ...</p>
+      <p>A clean and responsive website built from scratch with ...</p>
       <ul>
         <li><span>JavaScript, CSS3, and HTML5</span></li>
         <li><span>React</span></li>
