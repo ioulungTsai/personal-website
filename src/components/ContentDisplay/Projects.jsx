@@ -48,7 +48,10 @@ const ProjectStyled = styled.div`
   @media (hover: hover) {
     a:hover {
       img {
-        transform: scale(1.05);
+        ${'' /* transform: scale(1.05); */}
+        box-shadow: 0px 2px 4px -1px rgba(179,179,179,0.2),
+        0px 4px 5px 0px rgba(179,179,179,0.14),
+        0px 1px 10px 0px rgba(179,179,179,0.12);
       }
     }
   }

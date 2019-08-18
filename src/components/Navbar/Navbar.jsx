@@ -46,12 +46,7 @@ const Brand = styled.div`
   }
   &:hover {
     span {
-      color: #91CAF9;
-    }
-  }
-  & > a.active {
-    span {
-      border-bottom: 1px solid #FF9999;
+      color: #FF9999;
     }
   }
   @media screen and (min-width: 700px) {
@@ -68,46 +63,57 @@ const Favicon = styled.img`
 const Text = styled.span`
   display: none;
   font-weight: 600;
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 470px) {
     display: block;
   }
 `;
 
-const LinkItems = styled.div`
+const LinkItems = styled.ul`
   display: flex;
-  height: inherit;
-  align-items: center;
-  ul {
-    display: flex;
-    list-style: none;
+  list-style: none;
+  li {
+    padding-left: 1rem;
+    a {
+      line-height: 60px;
+      position: relative;
+      text-align: center;
+      font-weight: normal;
+      display: inline-block;
+      ${'' /* transition-duration: 0.3s; */}
+      ${'' /* border-bottom: 1px solid transparent; */}
+      span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background: #FF9999;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: transform 300ms cubic-bezier(.4,0,.2,1);
+      }
+    }
+    a.active {
+      ${'' /* border-bottom: 1px solid #FF9999; */}
+      span {
+        transform: scaleY(2);
+      }
+    }
+    @media (hover: hover) {
+      a:hover {
+        color: #FF9999;
+      }
+    }
+  }
+  li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 380px) {
+    padding-left: 2rem;
     li {
-      padding-left: 1rem;
-      a {
-        padding: 0.25rem 0;
-        text-align: center;
-        font-weight: normal;
-        transition-duration: 0.3s;
-        border-bottom: 1px solid transparent;
-      }
-      a.active {
-        border-bottom: 1px solid #FF9999;
-      }
-      @media (hover: hover) {
-        a:hover {
-          color: #91CAF9;
-        }
-      }
-    }
-    li:first-child {
-      border-left: 0;
-      margin-left: 0;
-      padding-left: 0;
-    }
-    @media screen and (min-width: 350px) {
-      padding-left: 2rem;
-      li {
-        margin-left: 1rem;
-      }
+      margin-left: 1rem;
     }
   }
 `;
@@ -122,12 +128,30 @@ const Navbar = () => (
         </NavLink>
       </Brand>
       <LinkItems>
-        <ul>
-          <li><NavLink to='/about'>About</NavLink></li>
-          <li><NavLink to='/resume'>Resume</NavLink></li>
-          <li><NavLink to='/projects'>Projects</NavLink></li>
-          <li><NavLink to='/contact'>Contact</NavLink></li>
-        </ul>
+          <li>
+            <NavLink to='/about'>
+              About
+              <span></span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/resume'>
+              Resume
+              <span></span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/projects'>
+              Projects
+              <span></span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/contact'>
+              Contact
+              <span></span>
+            </NavLink>
+          </li>
       </LinkItems>
     </div>
   </Nav>

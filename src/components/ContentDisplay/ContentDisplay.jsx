@@ -28,7 +28,7 @@ const Display = styled.div`
   }
   .fade-enter-active {
     opacity: 1;
-    transition: opacity 300ms ease-in 150ms;
+    transition: opacity 200ms ease-in 100ms;
   }
   .fade-exit {
     opacity: 1;
@@ -66,7 +66,7 @@ const ContentDisplay = ({ location }) => {
         <TransitionGroup>
           <CSSTransition
             key={location.key}
-            timeout={450}
+            timeout={300}
             classNames="fade"
           >
             <Scroll>
