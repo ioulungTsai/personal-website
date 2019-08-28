@@ -79,7 +79,7 @@ const LinkItems = styled.ul`
       text-align: center;
       font-weight: normal;
       display: inline-block;
-      ${'' /* transition-duration: 0.3s; */}
+      transition-duration: 0.3s;
       ${'' /* border-bottom: 1px solid transparent; */}
       span {
         position: absolute;
